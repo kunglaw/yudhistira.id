@@ -26,11 +26,11 @@
                                 <tbody>
                                    <?php foreach($post as $row){ ?>
                                    <tr>
-                                    <td><a href="<?=url("post/detail/".$row->post_id)?>"> {{ $row->title }} </a> </td>
+                                    <td><a href="<?=url("post/detail/".$row->id)?>"> {{ $row->title }} </a> </td>
                                     <td>{{ $row->name }}</td>
                                     <td>
-                                        <a href="<?=url("post/update/".$row->post_id)?>" class="btn btn-primary"> U </a>
-                                        <a href="<?=url("post/delete/".$row->post_id)?>" class="btn btn-danger"> D </a>
+                                        <a href="<?=url("post/update/".$row->id)?>" class="btn btn-primary"> U </a>
+                                        <a href="<?=url("post/delete/".$row->id)?>" class="btn btn-danger"> D </a>
                                     </td>
                                    <tr>
                                    <?php } ?>

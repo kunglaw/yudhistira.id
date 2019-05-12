@@ -27,9 +27,9 @@
                                 <h5 class="card-title"> Comments </h5>
                             </div>
                             <ul class="list-group list-group-flush">
-                            <?php foreach($comment as $row1){ ?>
+                            <?php foreach($post->comments as $row1){ ?>
                                 <li class="list-group-item">
-                                    <div class="small"> {{ $row1->name }} : </div> 
+                                    <div class="small"> {{ $row1->user->name }} : </div> 
                                     <div> {{ $row1->comment }}</div> 
                                 </li>
                               
