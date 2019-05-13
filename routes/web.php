@@ -25,3 +25,6 @@ Route::get("/post/detail/{post_id}","PostController@detail");
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::resource("/cruds","CrudsController",[
+    "except" => ["edit", "show", "store"]
+]);
